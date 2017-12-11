@@ -1,0 +1,9 @@
+{
+  "name": "cwp-16",
+  "version": "0.0.1",
+  "dependencies": {
+    "axios": "latest",
+    "bluebird": "latest",
+    "geolib": "latest"
+  }
+}
