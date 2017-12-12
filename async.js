@@ -7,7 +7,7 @@ async function main()
     let gmaps = axios.create({baseURL: 'https://maps.googleapis.com/maps/api/geocode/'});
 
     let firstTaskData = await Promise.map(["json?address=Minsk", "json?address=Madrid", "json?address=Rome"],
-                              query => gmaps.get(query))
+                              query => gmaps.get(query));
     console.log(await firstTaskData.forEach(iter => { console.log(iter.data.results)}));
     console.log('--------------------------------------------------------------------------------\n\n\n\n\n');
 
